@@ -1,0 +1,125 @@
+{
+    "basic_info": {
+      "description_header": "Oi",
+      "description": "👋 Eu sou a Lauany Reis. Desenvolvedor Web Full Stack e Desenvolvedor de Aplicativos Móveis com experiência na construção de aplicativos Web com JavaScript / Reactjs / Nodejs / C # / .NET e algumas outras bibliotecas e frameworks interessantes e aplicativos móveis de plataforma cruzada com React Native. Agradeço por sua atenção.",
+      "section_name": {
+        "about": "Sobre mim",
+        "projects": "Projetos",
+        "skills": "Habilidades",
+        "experience": "Experiência",
+        "contact": "Entre em contato"
+      }
+    },
+    "projects": [
+      {
+        "title": "COVID-19: BRASIL",
+        "startDate": "2020",
+        "description": "Foi planejado um layout de site minimalista com aparência de Dashboard contendo as informações coletadas sobre a COVID-19 no Brasil. Os conteúdos foram dispostos em cards afim de facilitar a visualização dos itens, também foram utilizados Breadcrumbs (apesar do escopo pequeno) para facilitar a navegação, um menu lateral responsivo, e tags responsivas para imagens e ícones. Para a aplicação de estilo foi elaborado um arquivo CSS inspirado em tecnologias responsivas como Normalize e Bootstrap, a partir das quais foram criados os componentes hard coded.",
+        "images": [
+          "images/portfolio/photography/p1.jpg",
+          "images/portfolio/photography/p2.jpg"
+        ],
+        "gitUrl": "https://github.com/Lawniet/noticias-do-covid-19",
+        "demoUrl": "https://noticias-covid-19-brasil.netlify.app/",
+        "technologies": [
+          {
+            "class": "devicon-html5-plain",
+            "name": "HTML5"
+          },
+          {
+            "class": "devicon-css3-plain",
+            "name": "CSS3"
+          },
+          {
+            "class": "devicon-javascript-plain",
+            "name": "JavaScript"
+          }
+        ]
+      },
+      {
+        "title": "Airbnb",
+        "startDate": "2021",
+        "description": "Clone do Airbnb através do consumo da API de quartos, usando Javascript Vanilla e Flexbox para organizá-los em cards na tela.",
+        "images": [
+          "images/portfolio/photography/p1.jpg",
+          "images/portfolio/photography/p2.jpg"
+        ],
+        "gitUrl": "https://github.com/Lawniet/Airbnb",
+        "technologies": [
+          {
+            "class": "devicon-html5-plain",
+            "name": "HTML5"
+          },
+          {
+            "class": "devicon-css3-plain",
+            "name": "CSS3"
+          },
+          {
+            "class": "devicon-javascript-plain",
+            "name": "JavaScript"
+          }
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Impulso Network",
+        "title": "Desenvolvedora .NET Júnior",
+        "years": "11.2021 - até o presente",
+        "mainTech": [
+          "C# com .NET"
+        ],
+        "technologies": [
+          "REST API",
+          "JavaScript",
+          "React",
+          "EF Core",
+          ".NET Core"
+        ]
+      },
+      {
+        "company": "SiplanControl-M",
+        "title": "Desnvolvedora Técnica",
+        "years": "03.2021 - 12.2021",
+        "mainTech": [
+          "C# com Asp.NET"
+        ],
+        "technologies": [
+          "Crystal Reports SAP",
+          "VB.NET",
+          "SQL Server",
+          "JavaScript",
+          "Azure DevOps"
+        ]
+      },
+      {
+        "company": "Tribunal de Contas da União",
+        "title": "Estagiária",
+        "years": "03.2020 - 03.2021",
+        "mainTech": [
+          "C# com Asp.NET"
+        ],
+        "technologies": [
+          "SQL Server",
+          "HTML5",
+          "CSS3",
+          "JavaScript"
+        ]
+      },
+      {
+        "company": "Tribunal Regional Federal da Primeira Região",
+        "title": "Estagiária",
+        "years": "06.2017 - 06.2019",
+        "mainTech": [
+          "Websites com PHP"
+        ],
+        "technologies": [
+          "HTML",
+          "CSS",
+          "Bootstrap",
+          "JavaScript",
+          "SQL Server"
+        ]
+      }
+    ]
+  }

@@ -1,0 +1,138 @@
+{
+    "basic_info": {
+      "description_header": "Hi",
+      "description": "👋 I'm Lauany Reis. A Full Stack Web Developer and Mobile App Developer having an experience of building Web applications with JavaScript / Reactjs / Nodejs / C# / .NET and some other cool libraries and frameworks and Cross Platform Mobile Apps With React Native. Thanks for your attention.",
+      "section_name": {
+        "about": "About me",
+        "projects": "Projects",
+        "skills": "Skills",
+        "experience": "Experience",
+        "contact": "Contact me"
+      },
+      "navbar_itens": [
+        "Home", 
+        "About", 
+        "Experience", 
+        "Projects", 
+        "Skills", 
+        "Contact"
+    ]
+    },
+    "projects": [
+      {
+        "title": "COVID-19: BRAZIL",
+        "startDate": "2020",
+        "description": "A minimalistic Dashboard-looking website layout was planned containing the information collected about COVID-19 in Brazil. The contents were arranged in cards to facilitate the visualization of the items, Breadcrumbs were also used (despite the small scope) to facilitate navigation, a responsive side menu, and responsive tags for images and icons. For the application of the style, a CSS file inspired by responsive technologies such as Normalize and Bootstrap was created, from which the hard coded components were created.",
+        "images": [
+          "images/portfolio/photography/p1.jpg",
+          "images/portfolio/photography/p2.jpg"
+        ],
+        "gitUrl": "https://github.com/Lawniet/noticias-do-covid-19",
+        "demoUrl": "https://noticias-covid-19-brasil.netlify.app/",
+        "technologies": [
+          {
+            "class": "devicon-html5-plain",
+            "name": "HTML5"
+          },
+          {
+            "class": "devicon-css3-plain",
+            "name": "CSS3"
+          },
+          {
+            "class": "devicon-javascript-plain",
+            "name": "JavaScript"
+          }
+        ]
+      },
+      {
+        "title": "Airbnb",
+        "startDate": "2021",
+        "description": "Clone Airbnb by consuming the rooms API, using Javascript Vanilla and Flexbox to organize them into cards on the screen.",
+        "images": [
+          "images/portfolio/photography/p3.jpg",
+          "images/portfolio/photography/p4.jpg"
+        ],
+        "gitUrl": "https://github.com/Lawniet/Airbnb",
+        "technologies": [
+          {
+            "class": "devicon-html5-plain",
+            "name": "HTML5"
+          },
+          {
+            "class": "devicon-css3-plain",
+            "name": "CSS3"
+          },
+          {
+            "class": "devicon-javascript-plain",
+            "name": "JavaScript"
+          }
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Impulso Network",
+        "title": "Junior .NET Developer",
+        "years": "11.2021 - present",
+        "mainTech": [
+          "C# with .NET"
+        ],
+        "technologies": [
+          "REST API",
+          "JavaScript",
+          "React",
+          "EF Core",
+          ".NET Core"
+        ]
+      },
+      {
+        "company": "SiplanControl-M",
+        "title": "Technical Developer",
+        "years": "03.2021 - 12.2021",
+        "mainTech": [
+          "C# with Asp.NET"
+        ],
+        "technologies": [
+          "Crystal Reports SAP",
+          "VB.NET",
+          "SQL Server",
+          "JavaScript",
+          "Azure DevOps"
+        ]
+      },
+      {
+        "company": "Court Union Accounts",
+        "title": "Intern",
+        "years": "03.2020 - 03.2021",
+        "mainTech": [
+          "C# with Asp.NET"
+        ],
+        "technologies": [
+          "SQL Server",
+          "HTML5",
+          "CSS3",
+          "JavaScript"
+        ]
+      },
+      {
+        "company": "Federal Regional Court of the First Region",
+        "title": "Intern",
+        "years": "06.2017 - 06.2019",
+        "mainTech": [
+          "PHP"
+        ],
+        "technologies": [
+          "HTML",
+          "CSS",
+          "Bootstrap",
+          "JavaScript",
+          "SQL Server"
+        ]
+      }
+    ],
+    "footer": [
+        {
+          "made": "Made with"
+        }
+      ]
+  }

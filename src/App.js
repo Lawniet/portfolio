@@ -1,25 +1,158 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import $ from "jquery";
+import "./App.scss";
+//import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import TopButton from "./components/TopButton";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import About from "./components/About";
+import Experience from "./components/Experience";
+import Projects from "./components/Projects";
+import Skills from "./components/Skills";
+import FormContact from "./components/FormContact";
+//import LawnietLogo from "./components/LawnietLogo"; 
+import ReactTooltip from "react-tooltip";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+
+  constructor(props) {
+    super();
+    this.state = {
+      resumeData: {},
+      sharedData: {},
+    };
+  }
+
+  applyPickedLanguage(pickedLanguage, oppositeLangIconId) {
+    this.swapCurrentlyActiveLanguage(oppositeLangIconId);
+    document.documentElement.lang = pickedLanguage;
+    var resumePath =
+      document.documentElement.lang === window.$primaryLanguage
+        ? `res_primaryLanguage.json`
+        : `res_secondaryLanguage.json`;
+    this.loadResumeFromPath(resumePath);
+  }
+
+  swapCurrentlyActiveLanguage(oppositeLangIconId) {
+    var pickedLangIconId =
+      oppositeLangIconId === window.$primaryLanguageIconId
+        ? window.$secondaryLanguageIconId
+        : window.$primaryLanguageIconId;
+    document
+      .getElementById(oppositeLangIconId)
+      .removeAttribute("filter", "brightness(40%)");
+    document
+      .getElementById(pickedLangIconId)
+      .setAttribute("filter", "brightness(40%)");
+  }
+
+  componentDidMount() {
+    this.loadSharedData();
+    this.applyPickedLanguage(
+      window.$primaryLanguage,
+      window.$secondaryLanguageIconId
+    );
+  }
+
+  loadResumeFromPath(path) {
+    $.ajax({
+      url: path,
+      dataType: "json",
+      cache: false,
+      success: function (data) {
+        this.setState({ resumeData: data });
+      }.bind(this),
+      error: function (xhr, status, err) {
+        alert(err);
+      },
+    });
+  }
+
+  loadSharedData() {
+    $.ajax({
+      url: `portfolio_shared_data.json`,
+      dataType: "json",
+      cache: false,
+      success: function (data) {
+        this.setState({ sharedData: data });
+        document.title = `${this.state.sharedData.basic_info.name}`;
+      }.bind(this),
+      error: function (xhr, status, err) {
+        alert(err);
+      },
+    });
+  }
+
+  render() {
+    return (
+      <div>
+        <Router>
+      <Navbar />
+    </Router>
+        <Header sharedData={this.state.sharedData.basic_info} />
+        <div className="col-md-12 mx-auto text-center language">
+          <div
+            onClick={() =>
+              this.applyPickedLanguage(
+                window.$primaryLanguage,
+                window.$secondaryLanguageIconId
+              )
+            }
+            style={{ display: "inline" }}
+            data-for='tip_en' data-tip='Translate to english'
+          >
+            <span 
+              className="iconify language-icon mr-5"
+              data-icon="twemoji-flag-for-flag-us-outlying-islands"
+              data-inline="false"
+              id={window.$primaryLanguageIconId}
+            ></span>
+          </div>
+          <ReactTooltip id="tip_en" place="left" type="dark" effect="solid" getContent={(dataTip) => `${dataTip}`}/>
+          <div
+            onClick={() =>
+              this.applyPickedLanguage(
+                window.$secondaryLanguage,
+                window.$primaryLanguageIconId
+              )
+            }
+            style={{ display: "inline" }}
+            data-for='tip_pt' data-tip='Traduzir para português'
+          >
+            <span 
+              className="iconify language-icon"
+              data-icon="twemoji-flag-for-flag-brazil"
+              data-inline="false"
+              id={window.$secondaryLanguageIconId}
+            ></span>
+          </div>
+          <ReactTooltip id="tip_pt" place="right" type="dark" effect="solid" getContent={(dataTip) => `${dataTip}`}/>
+        </div>
+        <About
+          resumeBasicInfo={this.state.resumeData.basic_info}
+          sharedBasicInfo={this.state.sharedData.basic_info}
+        />
+        <Projects
+          resumeProjects={this.state.resumeData.projects}
+          resumeBasicInfo={this.state.resumeData.basic_info}
+        />
+        <Skills
+          sharedSkills={this.state.sharedData.skills}
+          resumeBasicInfo={this.state.resumeData.basic_info}
+        />
+
+          <Experience resumeExperience={this.state.resumeData.experience}
+          resumeBasicInfo={this.state.resumeData.basic_info}
+        />
+
+        <FormContact resumeBasicInfo={this.state.resumeData.basic_info} />
+        <Footer sharedBasicInfo={this.state.sharedData.basic_info} />
+        <TopButton />
+      </div>
+    );
+  }
 }
 
 export default App;
