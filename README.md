@@ -8,7 +8,7 @@ O objetivo foi criar uma interface utilizando os recursos básicos da framework,
 
 ## :link: Layout do projeto:
 
-## :rocket: DETALHAMENTO TÉCNICO:
+## :rocket: Detalhamento Técinico:
 
 - ✔️ React - Framework para o front;
 - ✔️ Node;
