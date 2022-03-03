@@ -1,4 +1,6 @@
 # Portfólio pessoal
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/e53d894b25d9406a91b8812793d13d79)](https://www.codacy.com/gh/Lawniet/portfolio/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Lawniet/portfolio&amp;utm_campaign=Badge_Grade)
+[![GitHub license](https://img.shields.io/github/license/Lawniet/portfolio)](https://github.com/Lawniet/portfolio/blob/master/LICENSE)
 
 Este projeto foi criado para exercicitar os conhecimentos adquiridos durante o estudo de React.
 
@@ -16,7 +18,7 @@ O objetivo foi criar uma interface utilizando os recursos básicos da framework,
 - ✔️ EmailJS - Envios de e-mails;
 - ✔️ Formik e Yup - Formulários.
 - ✔️ GitHub - Versionamento;
-- ✔️ Heroku - Hospedagem;
+- ✔️ Netfly - Hospedagem;
 
 ## ⚙ Pré Requisitos
 
@@ -31,7 +33,7 @@ O objetivo foi criar uma interface utilizando os recursos básicos da framework,
 ## :information_source: Intruções de uso:
 ### Clonar o repositório
 ```bash
-$ git clone https://github.com/CarlosAmorim94/portfolio
+$ git clone https://github.com/Lawniet/portfolio
 ```
 
 ### Instalar dependências
