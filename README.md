@@ -1,15 +1,22 @@
-# Portfólio
+# Portfólio pessoal
 
-Esse portfólio foi criado como exercícios de fixação dos estudos em React.
+Este projeto foi criado para exercicitar os conhecimentos adquiridos durante o estudo de React.
 
-## 🚀 Projeto criado com as seguintes tecnologias:
+O objetivo foi criar uma interface utilizando os recursos básicos da framework, além de englobar os conceitos de componentização, estruturaçãode layouts, teoria das cores, técnicas de UI/UX, responsividade e plugins JQuery.
 
-- ✔️ Alteração de temas e idiomas;
-- ✔️ Responsividade (PC, Notebook e Smartphone);
-- ✔️ Componentização;
-- ✔️ Treinar SASS com o uso do Styled Components;
-- ✔️ Envios de e-mails com EmailJS;
-- ✔️ Formulários com formik e Yup.
+## :link: Layout do projeto:
+
+## :rocket: DETALHAMENTO TÉCNICO:
+
+- ✔️ React - Framework para o front;
+- ✔️ Node;
+- ✔️ Bootstrap - Design responsivo;
+- ✔️ Styled Components;
+- ✔️ SASS - Folhas de estilo;
+- ✔️ EmailJS - Envios de e-mails;
+- ✔️ Formik e Yup - Formulários.
+- ✔️ GitHub - Versionamento;
+- ✔️ Heroku - Hospedagem;
 
 ## ⚙ Pré Requisitos
 
@@ -21,19 +28,22 @@ Esse portfólio foi criado como exercícios de fixação dos estudos em React.
 
 <br>
 
-## Clonar o repositório
+## :information_source: Intruções de uso:
+### Clonar o repositório
 ```bash
 $ git clone https://github.com/CarlosAmorim94/portfolio
 ```
 
-## Instalar dependências
+### Instalar dependências
 ```bash
 yarn
 ```
 
-## Rodar Projeto
+### Rodar Projeto
 ```bash
 yarn dev
 ```
 
-## 😃 Gostou? me siga no -> [Likedln](https://www.linkedin.com/in/lauany-reis-da-silva/)
+## :seedling: Desenvolvedora responsável: 
+Lauany Reis da Silva
+- LinkedIn: [https://www.linkedin.com/in/lauany-reis-da-silva/](https://www.linkedin.com/in/lauany-reis-da-silva/)
