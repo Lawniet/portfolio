@@ -27,6 +27,7 @@ O objetivo foi criar uma interface utilizando os recursos básicos da framework,
     - [ ] [VsCode](https://code.visualstudio.com/download);
     - [ ] [Git](https://git-scm.com/)
     - [ ] [NodeJS](https://nodejs.org/en/download/)
+    - [ ] [NPM](https://www.npmjs.com/package/npm)
 
 <br>
 
